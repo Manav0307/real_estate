@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EstatePro - Premium Real Estate</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -770,11 +770,9 @@
             <nav>
                 <ul>
                     <li><a href="#" onclick="showSection('home')">Home</a></li>
-                    <li><a href="#" onclick="showSection('plots')">Plots</a></li>
-                    <li><a href="#" onclick="showSection('apartments')">Apartments</a></li>
-                    <li><a href="#" onclick="showSection('complexes')">Complexes</a></li>
-                    <li><a href="#" onclick="showSection('agents')">Agents</a></li>
-                    <li><a href="#" onclick="showSection('company')">Company Details</a></li>
+                    <li><a href="#" onclick="showSection('complexes')" id="employee">Employees</a></li>
+                    <li><a href="#" onclick="showSection('agents')" id="agent">Agents</a></li>
+                    <li><a href="#" onclick="showSection('company')"id="company">Company Details</a></li>
                 </ul>
             </nav>
         </div>
@@ -794,7 +792,7 @@
                     <option value="apartment">Apartment</option>
                     <option value="complex">Complex</option>
                 </select>
-                <button class="search-button" type="submit">Select</button>
+                <button class="search-button" id="goBtn">Select</button>
             </div>
         </div>
     </section>
@@ -1425,6 +1423,26 @@
                 closeModal();
             }
         });
+
+        document.getElementById("goBtn").addEventListener("click",()=>{
+            const page = document.getElementById("categorySelect").value;
+            window.location.href = "/" + page;
+        });
+
+        document.getElementById("agent").addEventListener("click",()=>{
+            window.location.href = "/agent";
+        });
+ 
+        document.getElementById("employee").addEventListener("click",()=>{
+            window.location.href = "/employee";
+        });
+
+        document.getElementById("company").addEventListener("click",()=>{
+            window.location.href = "/company";
+        });
+        
+
     </script>
+<script src="index.js"></script>
 </body>
 </html>
