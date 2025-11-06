@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Details</title>
+  <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+  <tr>
+    <th>office_ID</th>
+    <th>Office_name</th>
+    <th>Office_address</th>
+    <th>City</th>
+    <th>Contact</th>
+    <th>Office_email</th>
+    <th>Manager_name</th>
+    <th>Num_Employees</th>
+  </tr>
+  <% for (let comp of comps) { %>
+    <tr>
+      <td><%= comp.Office_ID %></td>
+      <td><%= comp.Office_name %></td>
+      <td><%= comp.Office_address %></td>
+      <td><%= comp.City %></td>
+      <td><%= comp.Contact %></td>
+      <td><%= comp.Office_email %></td>
+      <td><%= comp.Manager_name %></td>
+      <td><%= comp.Num_Employees %></td>
+    </tr>
+  <% } %>
+</table>
+
+</body>
+</html>

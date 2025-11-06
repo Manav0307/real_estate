@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+  <tr>
+    <th>Emp_ID</th>
+    <th>Emp_name</th>
+    <th>Emp_contact</th>
+    <th>Office_ID</th>
+    <th>Salary</th>
+    <th>Joining_Date</th>
+    <th>Designation</th>
+  </tr>
+  <% for (let emp of emps) { %>
+    <tr>
+      <td><%= emp.Emp_ID %></td>
+      <td><%= emp.Emp_name %></td>
+      <td><%= emp.Emp_contact %></td>
+      <td><%= emp.Office_ID %></td>
+      <td><%= emp.Salary %></td>
+      <td><%= emp.Joining_Date %></td>
+      <td><%= emp.Designation %></td>
+    </tr>
+  <% } %>
+</table>
+
+</body>
+</html>

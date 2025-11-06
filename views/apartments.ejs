@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments Details</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+ <table>
+  <tr>
+    <th>Ap_ID</th>
+    <th>Flat_ID</th>
+    <th>Address</th>
+    <th>city</th>
+    <th>Ap_area</th>
+    <th>Block</th>
+    <th>Floor</th>
+    <th>Bedrooms</th>
+    <th>Flat_area</th>
+    <th>Balcony_area</th>
+    <th>Bedroom_area</th>
+    <th>Hall_area</th>
+    <th>Agent_id</th>
+  </tr>
+  <% for (let apart of aparts) { %>
+    <tr>
+      <td><%= apart.Ap_ID %></td>
+      <td><%= apart.Flat_ID %></td>
+      <td><%= apart.Appartment_address %></td>
+      <td><%= apart.Ap_city %></td>
+      <td><%= apart.Ap_area %></td>
+      <td><%= apart.Block %></td>
+      <td><%= apart.Floor %></td>
+      <td><%= apart.Bedrooms %></td>
+      <td><%= apart.Flat_area %></td>
+      <td><%= apart.Balcony_area %></td>
+      <td><%= apart.Bedroom_area %></td>
+      <td><%= apart.Hall_area %></td>
+      <td><%= apart.Agent_id %></td>
+    </tr>
+  <% } %>
+</table>
+
+</body>
+</html>
+
+<% for(apart of aparts) {%>
+<tr>
+  <td><%= aparts.Ap_ID %></td>
+  <td><%= aparts.Flat_ID %></td>
+  <td><%= aparts.Appartment_address %></td>
+  <td><%= aparts.Ap_city %></td>
+  <td><%= aparts.Ap_area %></td>
+  <td><%= aparts.Block %></td>
+  <td><%= aparts.Floor %></td>
+  <td><%= aparts.Bedrooms %></td>
+  <td><%= aparts.Flat_area %></td>
+  <td><%= aparts.Balcony_area %></td>
+  <td><%= aparts.Bedroom_area %></td>
+  <td><%= aparts.Hall_area %></td>
+  <td><%= aparts.Agent_id %></td>
+</tr>
+<% } %>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complexes Details</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+  <tr>
+    <th>Co_ID</th>
+    <th>Unit_ID</th>
+    <th>Constructor_ID</th>
+    <th>Co_name</th>
+    <th>Co_address</th>
+    <th>Constructor</th>
+    <th>Num_Units_Available</th>
+    <th>Unit_area</th>
+    <th>Unit_Block</th>
+    <th>Unit_cost</th>
+    <th>Unit_status</th>
+    <th>Constructor_Name</th>
+    <th>Construction_Year</th>
+    <th>Co_area</th>
+    <th>Parking_area</th>
+    <th>Blocks</th>
+    <th>Floors</th>
+  </tr>
+  <% for (let com of coms) { %>
+    <tr>
+      <td><%= com.Co_ID %></td>
+      <td><%= com.Unit_ID %></td>
+      <td><%= com.Constructor_ID %></td>
+      <td><%= com.Co_name %></td>
+      <td><%= com.Co_address %></td>
+      <td><%= com.Constructor %></td>
+      <td><%= com.Num_Units_Available %></td>
+      <td><%= com.Unit_area %></td>
+      <td><%= com.Unit_Block %></td>
+      <td><%= com.Unit_cost %></td>
+      <td><%= com.Unit_status %></td>
+      <td><%= com.Constructor_Name %></td>
+      <td><%= com.Construction_Year %></td>
+      <td><%= com.Co_area %></td>
+      <td><%= com.Parking_area %></td>
+      <td><%= com.Blocks %></td>
+      <td><%= com.Floors %></td>
+    </tr>
+  <% } %>
+</table>
+
+    
+</body>
+</html>

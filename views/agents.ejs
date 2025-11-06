@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+  <tr>
+    <th>Agent_id</th>
+    <th>Agent_name</th>
+    <th>Agent_email</th>
+    <th>Phone</th>
+    <th>Num_properties_dealed</th>
+    <th>Working_since</th>
+    <th>Dealing_category</th>
+  </tr>
+  <% for (let ag of ags) { %>
+    <tr>
+      <td><%= ag.Agent_id %></td>
+      <td><%= ag.Agent_name %></td>
+      <td><%= ag.Agent_email %></td>
+      <td><%= ag.Phone %></td>
+      <td><%= ag.Num_properties_dealed %></td>
+      <td><%= ag.Working_since %></td>
+      <td><%= ag.Dealing_category %></td>
+    </tr>
+  <% } %>
+</table>
+
+</body>
+</html>

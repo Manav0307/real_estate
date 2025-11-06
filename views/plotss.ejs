@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots Details</title>
+     <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+  <tr>
+    <th>P_id</th>
+    <th>dimension_id</th>
+    <th>P_address</th>
+    <th>P_price</th>
+    <th>P_status</th>
+    <th>Listed_date</th>
+    <th>area_sqft</th>
+    <th>facing_direction</th>
+    <th>P_length</th>
+    <th>P_breadth</th>
+    <th>road_width_ft</th>
+    <th>D_From_Highway</th>
+    <th>D_From_Hospital</th>
+    <th>D_From_Mall</th>
+    <th>Neighbour</th>
+    <th>Agent_id</th>
+  </tr>
+  <% for (let plo of plos) { %>
+    <tr>
+      <td><%= plo.P_id %></td>
+      <td><%= plo.dimension_id %></td>
+      <td><%= plo.P_address %></td>
+      <td><%= plo.P_price %></td>
+      <td><%= plo.P_status %></td>
+      <td><%= plo.Listed_date %></td>
+      <td><%= plo.area_sqft %></td>
+      <td><%= plo.facing_direction %></td>
+      <td><%= plo.P_length %></td>
+      <td><%= plo.P_breadth %></td>
+      <td><%= plo.road_width_ft %></td>
+      <td><%= plo.D_From_Highway %></td>
+      <td><%= plo.D_From_Hospital %></td>
+      <td><%= plo.D_From_Mall %></td>
+      <td><%= plo.Neighbour %></td>
+      <td><%= plo.Agent_id %></td>
+    </tr>
+  <% } %>
+</table>
+
+    
+</body>
+</html>
