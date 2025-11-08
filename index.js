@@ -46,8 +46,6 @@ JOIN complex_construction ON complex_construction.Co_ID = complex_details.Co_ID;
 try{
     connection.query(q2, (err,coms)=>{
         if(err) throw err;
-        console.log("Complex data length:", coms.length);
-        console.log("Sample row:", coms[0]);
         res.render("complexes.ejs",{coms});
     });
 } catch(err){
